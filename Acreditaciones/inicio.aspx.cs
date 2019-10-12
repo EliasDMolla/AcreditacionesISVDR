@@ -53,7 +53,7 @@ namespace Acreditaciones
                 {
                     if (ComprobarFormatoEmail(txt_email.Text)) 
                     {
-                        if (rb_publicoGral.Checked == true)
+                        if (rb_publicoGral.Checked)
                         {
                             ASD.Guardar(txt_nombre.Text, txt_email.Text, ddl_localidad.SelectedItem.ToString(), txt_telefono.Text, "Publico General", "Emprender 2018");
                             limpiar();
